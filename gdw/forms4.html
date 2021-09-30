@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pizza Form</title>
+</head>
+<body>
+<h1>Pizza Form</h1>
+<form method="GET" action="http://openbookproject.net/tutorials/getdown/resources/getecho.php">
+	<fieldset>
+		<legend>Personal Info</legend>
+		<label>First Name: <input type="text" name="fname" size="25"></label><br>
+		<label>Last Name: <input type="text" name="lname" size="25"></label><br>
+		<label>Phone: <input type="text" name="phone" size="25"></label><br>
+	</fieldset>
+	<fieldset>
+		<legend>Pizza</legend>
+		<label>Size: <input type="radio" name="size" value="small">Small<br>
+		<label>Size: <input type="radio" name="size" value="medium">Medium<br>
+			<label>Size: <input type="radio" name="size" value="large">Large<br>
+	</fieldset>
+	<fieldset>
+		<legend>Toppings</legend>
+		<input type="checkbox" name="peperoni" value="1">Peperoni<br>
+		<input type="checkbox" name="sausage" value="1">Sausage<br>
+		<input type="checkbox" name="basil" value="1">Basil<br>
+		<input type="checkbox" name="pineapple" value="1">Pineapple<br>
+		<input type="checkbox" name="ham" value="1">Ham<br>
+		<input type="checkbox" name="olive" value="1">Olive<br>
+		<input type="checkbox" name="anchovie" value="1">Anchovie<br>
+	</fieldset>
+	<button type="submit">Enter my Information</button>
+</form>
+<footer style="text-align: center;">
+<a href="http://validator.w3.org/check/referer">
+<strong> HTML </strong> Valid! </a>
+</footer>
+</body>
+</html>
