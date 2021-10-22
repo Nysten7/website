@@ -2,11 +2,42 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title></title>
+<title>Training</title>
 </head>
 <body>
-
+<h1>Training Simulation</h1>
+<h3>This training simulation is to help those that feel the need to practice before ordering a pizza. To use this, put in the response you would give to the prompt. For this example, we'll pretend we're placing an order at Domino's. 
+<form method="GET" action="https://openbookproject.net/tutorials/getdown/resources/getecho.php">
+<br><fieldset>
+<legend>Over the Phone Delivery Order</legend>
+<label>Hello! Welcome to Domino's Pizzaria! What would you like to order?</label>
+<textarea name="response1" cols="30" rows="1"></textarea><br><br>
+<label>Okay, a pizza! What size were you thinking?</label>
+<textarea name="response2" cols="30" rows="1"></textarea><br><br>
+<label>Alright, any topppings for today?</label>
+<textarea name="response3" cols="30" rows="1"></textarea><br><br>
+<label>Got it all down! Will you be paying in cash or on card?</label><br>
+<input type="radio" name="response4(A)" value="card">Credit/Debit Card<br>
+<input type="radio" name="response4(B)" value="cash">Cash<br><br>
+<label>Last thing we need is your adress <b>[...]</b> Thank you! Your pizza wil arrive in 20-30 minutes. See you soon!</label>
+</fieldset><br><br>
+<label><b>25 MINUTES LATER</b></label><br><br>
+<fieldset>
+<legend>Accepting the Delivery Order</legend>
+<label>*Knock Knock* Hello! It's Domino's pizza! (open the door?)<label><br>
+<input type="radio" name="response5(A) value="yes">Yes<br>
+<input type="radio" name="response5(B) value="no">No<br><br>
+<label>Hi! I have a pizza for [YOUR NAME HERE]. Your total comes out to be [PRICE]</label><br>
+<input type="radio" name="response6(A)" value="tip">Pay Tip<br>
+<input type="radio" name="response6(B)" value="tip and value">Pay + Balance (if you did not pay in card)<br>
+<input type="radio" name="resposne6(C)" value="no tip">Say Goodbye<br><br>
+<label>Enjoy your pizza?</label><br>
+<input type="radio" name="response7(A)" value="yes">Yes, I love Domino's<br>
+<input type="radio" name=response7(B)" value="no">No, I ordered pineapples on my pizza and have commited a sin 
+</fieldset>
+</form>
 <footer style="text-align: center;">
+<a href="index.html"><b>Go Back</b></a>
 <a href="http://validator.w3.org/check/referer">
 <strong> HTML </strong> Valid! </a>
 </footer>
