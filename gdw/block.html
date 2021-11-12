@@ -3,12 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Block-level Elements</title>
+<style>
+body {
+	margin: 40px;
+	padding: 40px;
+	background-color: #BE5;
+	border: 2px dashed #573;
+}
+h1, footer {
+	text-align: center;
+}
+p, pre {
+	margin-left: 15px;
+}
+.first {
+	background-color: #FF9;
+	border: 2px dotted #000;
+}
+.second {
+	background-color: #CF9;
+	border: 2px dotted #880;
+}
+#first {
+	color: 373;
+}
+#second {
+	color: #040;
+}
+</style>	
 </head>
 <body>
 <!-- content starts below here -->
 <h1>Block-level Elements</h1>
-<h2>Text in a Preformatted Element</h2>
-<pre>This               text
+<h2 id="first">Text in a Preformatted Element</h2>
+<pre class="first">This               text
 
             spans                 several 
        lines            
@@ -16,7 +44,7 @@
       of             extra 
 whitespcae.</pre>
 <p>The text is kept the same as I originally wrote it, with extra spaces making the words further apart.</p>
-<h2>Same Text in a Paragraph Element</h2>
+<h2 id="second">Same Text in a Paragraph Element</h2>
 <p>This               text
 
             spans                 several 
@@ -25,7 +53,7 @@ whitespcae.</pre>
       of             extra 
 whitespcae.</p>
 <p>This text, while copied and pasted from the spaced text above, is kept equal distance from eachother, despite the excess spaces which should push it further apart.</p>
-<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+<div class="second">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
 <br>
 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
 <p>Using div I noticed no difference between the two paragraphs.</p>
