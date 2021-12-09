@@ -38,7 +38,7 @@ nav {
 	margin-right: 10px;
 	opacity: 0.8;
 }
-section {
+div {	
 	background-image: url("../finalproject/media/piza1.jpg");
 	background-repeat: no-repeat; 
 	background-size: contain;
