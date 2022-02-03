@@ -15,8 +15,24 @@ alert("Meh");
 else {
 alert("Buzz off.");
 }
+var c = Number(prompt("Enter your favortie number", "4"));
+var d;
+for (x = 0; x < 100; x++){
+if ((c/2) == 0){
+var d = true;
+break;
+}
+if (d){
+form1.innerHTML = "Your number is even";
+}else{
+form1.innerHTML = "Your number is odd, or too big";
+}
 </script>
 </head>
 <body>
+<h1>Facts about your number</h1>
+<ul>
+<li id="form1"></li>
+</ul>
 </body>
 </html>
