@@ -3,10 +3,14 @@
 <head>
 <meta charset="utf-8">
 <title>My New Home Page in HTML!</title>
-
+<script>
+window.onload = function(){
+	var x = prompt("Hello! Please enter your name:","Billy Bob");
+	document.getElementByID("name").innerHTML = x;
+</script>
 </head>
 <body>
-<h1>My New Home Page in HTML!</h1>
+<h1>Welcome,  <span id="name"></span>,to My  Home Page in HTML!</h1>
 
 <h2>Projects</h2>
 <ul>
