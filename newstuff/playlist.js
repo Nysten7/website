@@ -7,7 +7,10 @@ button.onclick = handleButtonClick;
 function handleButtonClick(){
 var textInput = document.getElementById("songTextInput");
 var songName = textInput.value;
-alert("Adding " + songName);
+var li = document.createElement("li");
+li.innerHTML = songName;
+var ul = document.getElementById("playlist");
+ul.appendChild(li);
 }
 button.onclick = hamdleButtonClick;
 
