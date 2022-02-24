@@ -4,10 +4,18 @@
 <meta charset="utf-8">
 <title>Note to Self</title>
 <script>
-localStorage.setItem("sticky_0", "Pick up dry cleaning");
-localStorage.setItem("sticky_1", "Cancel cable tv, who needs it now?");
-var sticky = localStorage.getItem("sticky_0");
-alert(sticky);
+localStorage.clear();
+localStorage[0]="test1";
+localStorage[1]="test2";
+var x = "";
+for (var i = 0; i < localStorage.length; i++){
+var key = localStorage.key(i);
+var value = localStorage[key];
+i++;
+x += i + ") " + value +"\n";
+i--;
+}
+alert(x);
 </script>
 </head>
 <body>
