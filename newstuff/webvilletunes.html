@@ -4,16 +4,24 @@
 <meta charset="utf-8">
 <title>Webville Tunes</title>
 <script src="playlist.js"></script>
+<style>
+form {
+margin: 100px 20px 20px 490px;
+}
+body {
+background-color: grey;
+} 
+</style>
 </head>
 <body>
 <form>
-<input type="text" id="songTextInput" size="40" placeholder="Song name">
-<input type="button" id="addButton" value="Add Song">
+<input style="border: 5px solid DodgerBlue;" type="text" id="songTextInput" size="40" placeholder="Song name">
+<input style="border: 5px solid SlateBlue;" type="button" id="addButton" value="Add Song">
 </form>
-<ul id="playlist">
+<ul id="playlist" style="text-align: center; color: LawnGreen;">
 
 </ul>
-<footer>
+<footer style="text-align: center">
 <a href=".."><b> Go Back</b></a> |
 <a id="vLink1"><strong> HTML </strong> Valid! </a> |
 <a id="vLink2"><strong> CSS </strong> Valid! </a>
