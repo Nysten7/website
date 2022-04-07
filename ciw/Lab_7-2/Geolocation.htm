@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+<title>Geolocation</title>
+</head>
     <body>
         <p>Click the button to get your position, and see how far away from NYC you are!</p>
         <button onclick="getLocation()">My Location</button>
@@ -14,7 +17,7 @@
                 }
             }
             function showPosition(position) {
-                latlon.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude; + "<br>You are " + position.coords.latitude - 40.7128 + " latitude and " + position.coords.longitude - 74.0060 + " longitude away from NYC!"
+                latlon.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude + "<br>You are " + position.coords.latitude - 40.7128 + " latitude and " + position.coords.longitude - 74.0060 + " longitude away from NYC!";
             }
             function showError(error) {
                 switch (error.code) {
