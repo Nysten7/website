@@ -17,7 +17,7 @@
                 }
             }
             function showPosition(position) {
-                latlon.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude + "<br>The difference between your location and New York is  " + ((parseDouble(position.coords.latitude)) - 40.712)8 + " latitude and " + ((parseDouble(position.coords.longitude)) - 74.0060) + " longitude.";
+                latlon.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude + "<br>The difference between your location and New York is  " + (position.coords.latitude - 40.7128) + " latitude and " + (position.coords.longitude- 74.0060) + " longitude.";
             }
             function showError(error) {
                 switch (error.code) {
