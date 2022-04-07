@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>HTML5 Drag and Drop API Example</title>
+
+<style>
+body {background-color: brown;}
+	#div1 {width:350px;height:70px;padding:10px;border:10px solid white;}
+</style>
+<script>
+function allowDrop(ev)
+	{
+		ev.preventDefault();
+	}
+
+function drag(ev)
+	{
+		ev.dataTransfer.setData("Text",ev.target.id);
+	}
+
+function drop(ev)
+	{
+		var data=ev.dataTransfer.getData("Text");
+		ev.target.appendChild(document.getElementById(data));
+		ev.preventDefault();
+		alert("Good Job!");
+	}
+</script>
+</head>
+<body>
+
+	<p style="color: white;">Quick! Find the red rectangle and drag it to saftey!</p>
+
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	<br />
+	<img id="drag1" src="logo\Red.png" alt="Red" draggable="true" ondragstart="drag(event)" width="336" height="69" />
+
+<footer style="text-align: center; color: white;"">
+<a href="../.."><b> Go Back</b></a> |
+<a id="vLink1"><strong> HTML </strong> Valid! </a> |
+<a id="vLink2"><strong> CSS </strong> Valid! </a>
+</footer>
+<script>
+var loc = window.location.href;
+var HTMLvalidatorLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+var CSSvalidatorLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                          loc + '?profile=css3';
+document.getElementById("vLink1").setAttribute("href", HTMLvalidatorLinkStr);
+document.getElementById("vLink2").setAttribute("href", CSSvalidatorLinkStr);
+</script>
+</body>
+</html>
+
