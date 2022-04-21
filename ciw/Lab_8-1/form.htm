@@ -23,6 +23,8 @@
 <article>
 
 <h1>Roomate Matching Form</h1>
+<fieldset name="peronsalinfo">
+<legend>Personal Information</legend>
 <form>
 <p>
 <label for="sleep">How late do you stay up?: </label>
@@ -36,6 +38,9 @@
 <label for="grad">When do you graduate?: </label>
 <input type="date" name="graddate" id="grad"/>
 </p>
+</fieldset>
+<fieldset name="importantinfo">
+<legend>Important Information</legend>
 <p>
 <label for="bodies">On a scale from 1 to 10, how well would you say you can hide a body?: 1</label>
 <input type="range" name="bodyhiding" min="1" max="50" value="25" id="bodies"/>10
@@ -56,9 +61,14 @@
 <option value="In Plain Sight"></option>
 </datalist>
 </p>
+</fieldset>
+<fieldset name="agree">
+<legend>Agreement</legend>
 <p>
 <label type="agree">Please enter your full name is confirm you will niether report nor document any event that occurs during your time in the dorms: </label>
 <input type="text" name="agreenow" id="agree"/>
+</p>
+</fieldset>
 </form>
 </article> 
 
