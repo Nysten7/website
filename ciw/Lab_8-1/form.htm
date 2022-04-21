@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="Description" content="Sample Website for learning HTML5 and CSS3" />
+<link rel="stylesheet" href="css/uCorp.css" />
+<title>uCorp</title>
+</head>
+<body>
+
+<header>
+<img src="media/uCorp-logo-3.png" alt="uCorp logo" />
+</header>
+
+<nav>
+<p><a class="navlinks" href="http://www.ucorp.biz/course_about.php">About Course</a></p>
+<p><a class="navlinks" href="http://www.ucorp.biz/technology.php">Technology</a></p>
+</nav> 
+
+<section>
+
+
+<article>
+
+<h1>Roomate Matching Form</h1>
+<form>
+<p>
+<label for="sleep">How late do you stay up?: </label>
+<input type="text name="sleeptime" id="sleep"/>
+</p>
+<p>
+<label for="clean">How clean would you say you are?: </label>
+<input type="text" name="cleanhabbit" id="clean"/>
+</p>
+<p>
+<label for="grad">When do you graduate?: </label>
+<input type="date" name="graddate" id="grad"/>
+</p>
+<p>
+<label for="bodies">On a scale from 1 to 10, how well would you say you can hide a body?: 1</label>
+<input type="range" name="bodyhiding" min="1" max="50" value="25" id="bodies"/>10
+</p>
+<p>
+<label for="num">How many bodies have your previously hidden?: </label>
+<input type="number" name="bodynum" min="0" max="500" id="num"/>
+</p>
+<p>
+<label type="agree">Please enter your full name is confirm you will niether report nor document any event that occurs during your time in the dorms: </label>
+<input type="text" name="agreenow" id="agree"/>
+</form>
+</article> 
+
+
+</section> 
+
+
+<footer style="text-align: center; color: white;">
+<a href="../.."><b> Go Back</b></a> |
+<a id="vLink1"><strong> HTML </strong> Valid! </a> |
+<a id="vLink2"><strong> CSS </strong> Valid! </a>
+</footer>
+<script>
+var loc = window.location.href;
+var HTMLvalidatorLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+var CSSvalidatorLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                          loc + '?profile=css3';
+document.getElementById("vLink1").setAttribute("href", HTMLvalidatorLinkStr);
+document.getElementById("vLink2").setAttribute("href", CSSvalidatorLinkStr);
+</script>
+</body>
+</html>
