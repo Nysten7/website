@@ -49,6 +49,10 @@
 <input type="range" name="generalfeedback" min="1" max="10" value="5" id="general"/>10
 </p>
 <p>
+<label for="num">How many other computer-focused course have you taken/are currently enrolled in?: </label>
+<input type="number" min="0" max="20"/>
+</p> 
+<p>
 <label for="material">On a scale from 1 to 10, how well did you understand the material taught this year?: 1</label>
 <input type="range" name="materialq" min="1" max="10" value="5" id="material"/>10
 </p>
@@ -61,20 +65,27 @@
 <textarea id="positive" name="positivefeedback" rows="5" cols="40" placeholder="Write here"></textarea>
 </p>
 <p>
-<label for="negative">Please write below what you found annoying or uninteresting for you this year: </label><br>
+<label for="negative">Please write below what you found annoying or unhelpful for you this year: </label><br>
 <textarea id="negative" name="negativefeedback" rows="5" cols="40" placeholder="Write here"></textarea>
 </p>
-</form>
-</fieldset>
-<fieldset name="agree">
-<legend>Agreement</legend>
-<form>
 <p>
-<label for="agreesoon">Please enter your full name is confirm you will niether report nor document any event that occurs during your time in the dorms: </label>
-<input type="text" name="agreenow" id="agreesoon"/>
+<label for="comments">If you have any other feedback/comments, leave them here:  </label><br>
+<textarea id="comments" name="commentfeedback" rows="5" cols="40" placeholder="Write here"></textarea>
 </p>
 </form>
 </fieldset>
+<form>
+<fieldset name="optiontal">
+<label>Optional Feedback</label>
+<p>
+<label for="future">Will you use the material taught this year anytime in the future?:</label><br>
+<input type="radio" id="future" name="yesfuture" value="yes">Yes</input><br>
+<input type="radio" id="future" name="maybefuture" value="maybe">Maybe</input><br>
+<input type="radio" id="future" name="nofuture" value="no">No</input>
+</p>
+<p>
+</fieldset>
+</form>
 </article> 
 
 
