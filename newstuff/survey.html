@@ -45,24 +45,24 @@
 <legend>Feedback</legend>
 <form>
 <p>
-<label for="bodies">On a scale from 1 to 10, how well would you say you can hide a body?: 1</label>
-<input type="range" name="bodyhiding" min="1" max="50" value="25" id="bodies"/>10
+<label for="general">On a scale from 1 to 10, generally, how would your rate this class compared to other computer-focused courses?: 1</label>
+<input type="range" name="generalfeedback" min="1" max="10" value="5" id="general"/>10
 </p>
 <p>
-<label for="num">How many bodies have your previously hidden?: </label>
-<input type="number" name="bodynum" min="0" max="500" id="num"/>
+<label for="material">On a scale from 1 to 10, how well did you understand the material taught this year?: 1</label>
+<input type="range" name="materialq" min="1" max="10" value="5" id="material"/>10
 </p>
 <p>
-<label for="place">Where have you hidden bodies before?: </label>
-<input list="placeshidden" name="places" id="place"/>
-<datalist id="placeshidden">
-<option value="Behind the Couch"></option>
-<option value="Under the Floor"></option>
-<option value="Behind the Shed"></option>
-<option value="Between the Walls"></option>
-<option value="In your Car"></option>
-<option value="In Plain Sight"></option>
-</datalist>
+<label for="enjoy">On a scale from 1 to 10, how much did you enjoy the lessons and projects this year?: 1</label>
+<input type="range" name="enjoyment" min="1" max="10" value="5" id="enjoy"/>10
+</p>
+<p>
+<label for="positive">Please write below what you found helpful for you this year: </label><br>
+<textarea id="positive" name="positivefeedback" rows="5" cols="40" placeholder="Write here"></textarea>
+</p>
+<p>
+<label for="negative">Please write below what you found annoying or uninteresting for you this year: </label><br>
+<textarea id="negative" name="negativefeedback" rows="5" cols="40" placeholder="Write here"></textarea>
 </p>
 </form>
 </fieldset>
